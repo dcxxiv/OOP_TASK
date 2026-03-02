@@ -8,8 +8,6 @@ Student Information
 **Department:** Computer Science
 **University:** University of Gujrat
 
----
-
 Project Overview
 
 This project demonstrates core Object-Oriented Programming (OOP) concepts in C++ focusing on object creation, destruction, memory management, and object relationships.
