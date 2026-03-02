@@ -41,7 +41,7 @@ Task 8: Pointer Reassignment
 * Shows how memory leaks occur.
 * Demonstrates proper memory management.
 
----
+
 
 💻 Language Used
 
