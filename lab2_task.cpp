@@ -15,11 +15,10 @@ public:
         name = "Unknown";
         accountNumber = 10000;
         balance = 0;
-     
         setName(n);
         setAccountNumber(accNum);
         setBalance(bal);
- }
+    }
     BankAccount(const BankAccount &b) {
         name = b.name;
         accountNumber = b.accountNumber;
@@ -31,24 +30,27 @@ public:
         else
             name = n;
     }
-      void setAccountNumber(int accNum) {
+    void setAccountNumber(int accNum) {
         if (accNum < 10000 || accNum > 99999)
             cout << "Invalid Account Number" << endl;
         else
             accountNumber = accNum;
-        }
+    }
     void setBalance(double bal) {
         if (bal < 0)
             cout << "Invalid Balance" << endl;
         else
             balance = bal;
     }
-    string getName() {
-         return name; }
+     string getName() {
+        return name;
+    }
     int getAccountNumber() {
-         return accountNumber; }
+        return accountNumber;
+    }
     double getBalance() {
-         return balance; }
+        return balance;
+    }
     void displayAccountInfo() {
         cout << "Account Holder Name: " << name << endl;
         cout << "Account Number:       " << accountNumber << endl;
@@ -59,11 +61,13 @@ int main() {
     BankAccount acc1("Ali", 12345, 5000);
     acc1.displayAccountInfo();
     cout << endl;
-    BankAccount acc2 = acc1;
+    
+    BankAccount acc2("", 999, -100);
     acc2.displayAccountInfo();
     cout << endl;
-    BankAccount acc3("", 999, -100);
-    acc3.displayAccountInfo();
-    return 0;
 
+    BankAccount acc3 = acc1;
+    acc3.displayAccountInfo();
+
+    return 0;
 }
